@@ -17,7 +17,7 @@ ExportedObj/
 *.pidb
 *.booproj
 *.svd
-
+*.meta
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -28,3 +28,6 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Bio Raptor Brawl/Library/metadata/
+Bio Raptor Brawl/Library/ShaderCache/
+Bio Raptor Brawl/Library/Temp/
