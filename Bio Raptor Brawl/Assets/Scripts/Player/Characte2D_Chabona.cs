@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Characte2D_Chabona : MonoBehaviour {
     
@@ -71,10 +72,10 @@ public class Characte2D_Chabona : MonoBehaviour {
 
         }
 
-        if(grounded)
-            _anim.SetBool("air", false);
-        else
-            _anim.SetBool("air", true);
+        //if(grounded)
+        //    _anim.SetBool("air", false);
+        //else
+        //    _anim.SetBool("air", true);
 
 
         if (Input.GetButtonDown(jumpButton) && !wallSliding) {
@@ -184,7 +185,7 @@ public class Characte2D_Chabona : MonoBehaviour {
     }
 
     void Die() {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void Damage(int dmg) {

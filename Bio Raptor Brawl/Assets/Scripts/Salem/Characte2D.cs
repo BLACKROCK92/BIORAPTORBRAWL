@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Characte2D : MonoBehaviour {
     
@@ -149,7 +150,7 @@ public class Characte2D : MonoBehaviour {
     }
 
     void Die() {
-        Application.LoadLevel(Application.loadedLevel);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void Demage(int dmg) {
